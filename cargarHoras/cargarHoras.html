@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="cargarHoras.css">
 </head>
 
-<body>
+<body onload="asignar_fecha()">
     <div class="noSeleccionable logoIndustrial"><img src="../res/logo.png" class="indu" width="120" height="150"></div>
     <div class="contenido">
         <div class="contenido_contenido">
@@ -37,7 +37,7 @@
                             <p>hora de salida:</p> <input name="sal_hora" type="time">
                         </div>
                         <div class="inputFormulario">
-                            <p>fecha:</p> <input name="fecha_hora" type="date" id="fecha_hora" onload='asignar_fecha()'>
+                            <p>fecha:</p> <input name="fecha_hora" type="date" id="fecha_hora" >
                         </div>
                         <div class="inputFormulario">
                             <p>descripcion:</p> <input name="desc_hora" type="text">

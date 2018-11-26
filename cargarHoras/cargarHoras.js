@@ -13,15 +13,21 @@ function asignar_fecha(){
         mm = '0'+mm
     } 
 
-    today = yyyy + '/' + mm + '/' + dd ;
-    alert(today);
+    //today = dd + '/' +  mm + '/' + yyyy;
+    today = yyyy + '-' +  mm + '-' + dd;
+
     //document.write(today);
+    document.getElementById("fecha_hora").val = today;
+    alert(document.getElementById('fecha_hora').val);
 }
+
 
 $(document).ready(function () {
     $("#alumnosContainer").load("mostrarAlumnos.php");
 
     $("#fecha_hora").val(today);
+
+    //alert("prueba");
 });
 
 document.getElementById(error).style.visibility(block);
