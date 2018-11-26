@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carga Horas</title>
+    <link rel="stylesheet" href="../res/bootstrap/css/bootstrap.min.css">
+    <script src="../res/jquery-3.3.1.min.js"></script>
+
+    <script src="cargarHoras.js"></script>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="cargarHoras.css">
+</head>
+
+<body>
+    <div class="noSeleccionable logoIndustrial"><img src="../res/logo.png" class="indu" width="120" height="150"></div>
+    <div class="contenido">
+        <div class="contenido_contenido">
+            <div class="cajaBlanca">
+                    <form action="../cursos/cursos.html">
+                            <button id="boton_volver" type="submit">Volver</button>
+                    </form>
+                <div class="titulo">
+                    <h2>Cargar Horas</h2>
+                </div>
+                <div class="alumnos">
+                    <div id="alumnosContainer"></div>
+                </div>
+                <div class="formulario">
+                    <form action="altaHoras.php" method="post">
+                        <div class="inputFormulario">
+                            <p>hora de ingreso:</p> <input name="ing_hora" type="time">
+                        </div>
+                        <div class="inputFormulario">
+                            <p>hora de salida:</p> <input name="sal_hora" type="time">
+                        </div>
+                        <div class="inputFormulario">
+                            <p>fecha:</p> <input name="fecha_hora" type="date" id="fecha_hora" onload='asignar_fecha()'>
+                        </div>
+                        <div class="inputFormulario">
+                            <p>descripcion:</p> <input name="desc_hora" type="text">
+                        </div>
+                        <div class="inputFormulario">
+                            <p>supervisor:</p> <input name="sup_hora" type="text">
+                        </div>
+                        <div id="formularioBotonContainer">
+                            <input id="formularioBoton" type="submit" class="btn btn-primary" value="Cargar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

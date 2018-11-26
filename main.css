@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-image: linear-gradient(to right top, #081e31, #1c3954, #30577a, #4577a2, #5b98cc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logoIndustrial{
+    padding-top: 10px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 150px;
+    margin:auto;
+}
+
+.noSeleccionable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.contenido{
+    border-radius: 5px;
+    background-color: rgba(120, 150, 177, 0.374);
+    margin-top: -100px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    box-shadow: 15px 13px 26px 0px rgba(0, 0, 0, 0.5);
+}
