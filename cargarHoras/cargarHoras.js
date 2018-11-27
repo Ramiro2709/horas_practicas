@@ -18,7 +18,7 @@ function asignar_fecha(){
 
     //document.write(today);
     document.getElementById("fecha_hora").val = today;
-    alert(document.getElementById('fecha_hora').val);
+    //alert(document.getElementById('fecha_hora').val);
 }
 
 
