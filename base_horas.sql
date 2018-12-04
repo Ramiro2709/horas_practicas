@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 27-11-2018 a las 00:07:22
+-- Tiempo de generación: 03-12-2018 a las 21:51:19
 -- Versión del servidor: 5.7.23
 -- Versión de PHP: 5.6.38
 
@@ -16,7 +16,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Base de datos: `base_horas`
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   `nom_alumno` varchar(50) NOT NULL,
   `curso_alumno` int(3) NOT NULL,
   PRIMARY KEY (`id_alumno`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `alumnos`
